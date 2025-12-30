@@ -98,6 +98,18 @@ ul {
     transition: all 0.3s ease;
 }
 
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Hero Section */
 .hero-section {
     height: 100vh;
@@ -360,15 +372,23 @@ h2 {
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .typing-text {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         /* Smaller font for mobile to fit on screen with typing effect */
         white-space: normal;
         /* Allow wrap on very small screens if needed, but breaks typing effect slightly. ideally keep nowrap and scale down */
         white-space: nowrap;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .nav-links li {
+        padding: 20px 0;
     }
 
     .about-grid {
