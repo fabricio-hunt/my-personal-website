@@ -1,0 +1,377 @@
+/* Global Styles */
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --accent-color: #333333;
+    --highlight-color: #ffffff;
+    --font-main: 'Roboto Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header & Nav */
+.main-header {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Burger Menu (Mobile) */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 0px #333;
+}
+
+/* Typing Effect */
+.typing-container {
+    display: inline-block;
+}
+
+.typing-text {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 2px 2px 0px #333;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .75s step-end infinite;
+    max-width: 100%;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+/* 
+   Responsive adjustment for typing:
+   On smaller screens, the font size might cause the text to be too wide for the container 
+   if width is 100%. We need to ensure it fits or wraps gracefully (though typing usually requires nowrap).
+   We'll adjust font size in media queries.
+*/
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #888;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Sections General */
+section {
+    padding: 4rem 1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* About Section */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.terminal-window {
+    background-color: #111;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.terminal-header {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff5f56;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #27c93f;
+}
+
+.terminal-body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}
+
+.terminal-body p {
+    margin-bottom: 5px;
+}
+
+.response {
+    color: #ccc;
+    margin-left: 10px;
+}
+
+/* Community Section */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    border: 1px solid #333;
+    padding: 2rem;
+    background-color: #0a0a0a;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: white;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #0a0a0a;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    margin: 2rem 0;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #888;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        top: 60px;
+        background-color: black;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        transform: translateY(-150%);
+        transition: transform 0.5s ease-in;
+        padding-bottom: 2rem;
+    }
+
+    .nav-links.nav-active {
+        transform: translateY(0%);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .typing-text {
+        font-size: 1.5rem;
+        /* Smaller font for mobile to fit on screen with typing effect */
+        white-space: normal;
+        /* Allow wrap on very small screens if needed, but breaks typing effect slightly. ideally keep nowrap and scale down */
+        white-space: nowrap;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
