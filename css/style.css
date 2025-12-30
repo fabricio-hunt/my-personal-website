@@ -395,3 +395,23 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .typing-text {
+        font-size: 0.9rem;
+        /* Reduced to fit 375px screen without overflow using Roboto Mono */
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
