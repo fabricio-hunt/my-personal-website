@@ -5,73 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabrício Baraúna | DevOps, Python & Automação</title>
-    <meta name="description" content="Engenheiro de Software e Instrutor. Automação com Python e CI/CD. Transformo operações manuais em infraestrutura ágil e escalável.">
+    <meta name="description" content="Engenheiro de Software e especialista em DevOps. Automação com Python e CI/CD. Transformo operações manuais em infraestrutura ágil e escalável.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="data:image/png;base64,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" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bebas+Neue&family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,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" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
+    <!-- Particle/noise overlay -->
+    <div class="noise-overlay"></div>
+
     <header class="main-header">
         <nav class="navbar">
-            <div class="logo">FABRÍCIO.BARAÚNA</div>
-            <ul class="nav-links">
+            <div class="logo"><span class="logo-bracket">[</span>FB<span class="logo-bracket">]</span></div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">Quem sou</a></li>
-                <li><a href="https://github.com/fabricio-hunt" target="_blank">Github</a></li>
-                <li><a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=E47B652FAE1FA938DA92BA5C05169AD5.buscatextual_0"
-                        target="_blank">Lattes</a></li>
-                <li><a href="https://www.linkedin.com/in/fabricio-barauna93/" target="_blank">Linkedin</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#articles">Artigos</a></li>
+                <li><a href="#community">Comunidade</a></li>
+                <li><a href="https://github.com/fabricio-hunt" target="_blank" rel="noopener"><i class="fab fa-github"></i> Github</a></li>
+                <li><a href="https://www.linkedin.com/in/fabricio-barauna93/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="#contact" class="nav-cta">Contato</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
         </nav>
     </header>
 
     <main>
+        <!-- ===== HERO ===== -->
         <section id="hero" class="hero-section">
+            <div class="hero-bg-grid"></div>
             <div class="hero-content">
+                <div class="hero-tag"><span class="tag-dot"></span> DISPONÍVEL PARA PROJETOS</div>
                 <div class="typing-container">
-                    <h1 class="typing-text">FABRÍCIO M. BARAÚNA</h1>
+                    <h1 class="typing-text" id="typing-text">FABRÍCIO M. BARAÚNA</h1>
                 </div>
-                <p class="subtitle">TECHNICAL SEO | PYTHON AUTOMATION | DEVOPS</p>
-                <a href="https://wa.me/5592988268454" target="_blank" class="cta-button">CONECTE-SE</a>
+                <p class="subtitle">TECHNICAL SEO &nbsp;|&nbsp; PYTHON AUTOMATION &nbsp;|&nbsp; DEVOPS</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5592988268454" target="_blank" rel="noopener" class="cta-button">
+                        <i class="fab fa-whatsapp"></i> CONECTE-SE
+                    </a>
+                    <a href="#articles" class="cta-outline">VER ARTIGOS →</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Anos SEO</span></div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat"><span class="stat-num">Python</span><span class="stat-label">Automação</span></div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat"><span class="stat-num">Cloud</span><span class="stat-label">DevOps</span></div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>SCROLL</span>
+                <div class="scroll-line"></div>
             </div>
         </section>
 
+        <!-- ===== ABOUT ===== -->
         <section id="about" class="about-section">
             <div class="container">
-                <h2>QUEM SOU</h2>
+                <div class="section-label">// QUEM SOU</div>
+                <h2>SOBRE <span class="accent">MIM</span></h2>
                 <div class="about-grid">
                     <div class="about-text">
-                        <p>Sou Fabrício Baraúna, Bacharel em Sistemas de Informação e graduando em Engenharia de Software.
-                            Com 5 anos de experiência em SEO Técnico, hoje direciono minha carreira para Engenharia de Plataforma e DevOps.</p>
+                        <p>Sou <strong>Fabrício Baraúna</strong>, Bacharel em Sistemas de Informação e graduando em Engenharia de Software.
+                            Com 5 anos de experiência em SEO Técnico, hoje direciono minha carreira para <strong>Engenharia de Plataforma e DevOps</strong>.</p>
                         <p>Meu foco é desenvolver automações em Python e arquiteturas em Cloud que garantem não apenas infraestrutura,
                             mas performance web e observabilidade real para o negócio.</p>
-                        <p><em>"Transformando processos manuais em código escalável."</em></p>
+                        <p class="quote"><span class="quote-mark">"</span>Transformando processos manuais em código escalável.<span class="quote-mark">"</span></p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">SEO</span>
+                        </div>
                     </div>
                     <div class="about-visual">
-                        <!-- Placeholder for maybe an ascii art or simple css graphic -->
                         <div class="terminal-window">
                             <div class="terminal-header">
                                 <span class="dot red"></span>
                                 <span class="dot yellow"></span>
                                 <span class="dot green"></span>
+                                <span class="terminal-title">fabricio@devops ~</span>
                             </div>
-                            <div class="terminal-body">
-                                <p>> whoami</p>
-                                <p class="response">root@fabricio-devops</p>
-                                <p>> uptime</p>
-                                <p class="response">always running...</p>
+                            <div class="terminal-body" id="terminal-body">
+                                <p><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+                                <p class="response">fabricio-barauna</p>
+                                <p><span class="prompt">$</span> <span class="cmd">cat skills.txt</span></p>
+                                <p class="response">DevOps | Cloud | Python | SEO</p>
+                                <p><span class="prompt">$</span> <span class="cmd">uptime</span></p>
+                                <p class="response">always running... 🚀</p>
+                                <p><span class="prompt">$</span> <span class="cmd">git status</span></p>
+                                <p class="response">On branch: <span class="git-branch">main</span></p>
+                                <p class="response">Nothing to commit, everything deployed ✓</p>
+                                <p><span class="prompt">$</span> <span class="cursor-blink">▋</span></p>
                             </div>
                         </div>
                     </div>
@@ -79,36 +117,145 @@
             </div>
         </section>
 
+        <!-- ===== ARTIGOS DEVOPS ===== -->
+        <section id="articles" class="articles-section">
+            <div class="container">
+                <div class="section-label">// LEITURAS RECOMENDADAS</div>
+                <h2>ARTIGOS <span class="accent">DEVOPS</span></h2>
+                <p class="section-subtitle">Curadoria de conteúdo técnico de alto nível. Referências do mundo real.</p>
+                <div class="articles-grid">
+
+                    <article class="article-card">
+                        <div class="article-tag-category">SYSTEM DESIGN</div>
+                        <h3 class="article-title">
+                            <a href="https://fidelissauro.dev/system-design-sumario/" target="_blank" rel="noopener">
+                                System Design — O Sumário e o Prefácio
+                            </a>
+                        </h3>
+                        <p class="article-excerpt">Ponto de partida para entender os pilares do System Design moderno. Um guia completo que cobre os fundamentos de arquitetura distribuída.</p>
+                        <div class="article-meta">
+                            <span class="article-author"><i class="fas fa-user-circle"></i> Matheus Fidelis</span>
+                            <a href="https://fidelissauro.dev/system-design-sumario/" target="_blank" rel="noopener" class="article-link">Ler →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card featured">
+                        <div class="article-featured-badge">⭐ Destaque</div>
+                        <div class="article-tag-category">OBSERVABILIDADE</div>
+                        <h3 class="article-title">
+                            <a href="https://fidelissauro.dev/observabilidade/" target="_blank" rel="noopener">
+                                System Design — Observabilidade e Monitoramento
+                            </a>
+                        </h3>
+                        <p class="article-excerpt">Após cobrir Performance, Capacidade e Escalabilidade, este artigo faz um "recap" dos principais pilares de observabilidade que todo engenheiro precisa dominar.</p>
+                        <div class="article-meta">
+                            <span class="article-author"><i class="fas fa-user-circle"></i> Matheus Fidelis</span>
+                            <a href="https://fidelissauro.dev/observabilidade/" target="_blank" rel="noopener" class="article-link">Ler →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-tag-category">RESILIÊNCIA</div>
+                        <h3 class="article-title">
+                            <a href="https://fidelissauro.dev/single-point-of-failure/" target="_blank" rel="noopener">
+                                System Design — Single Point of Failure & Disaster Recovery
+                            </a>
+                        </h3>
+                        <p class="article-excerpt">Como projetar sistemas resilientes utilizando redundância, replicação, failover automático e estratégias de Disaster Recovery.</p>
+                        <div class="article-meta">
+                            <span class="article-author"><i class="fas fa-user-circle"></i> Matheus Fidelis</span>
+                            <a href="https://fidelissauro.dev/single-point-of-failure/" target="_blank" rel="noopener" class="article-link">Ler →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-tag-category">ARQUITETURA</div>
+                        <h3 class="article-title">
+                            <a href="https://fidelissauro.dev/cell-based/" target="_blank" rel="noopener">
+                                System Design — Cell-Based Architecture
+                            </a>
+                        </h3>
+                        <p class="article-excerpt">Guia profundo sobre Cell-Based Architecture: sistemas distribuídos resilientes com células independentes, shuffle sharding e isolamento de falhas.</p>
+                        <div class="article-meta">
+                            <span class="article-author"><i class="fas fa-user-circle"></i> Matheus Fidelis</span>
+                            <a href="https://fidelissauro.dev/cell-based/" target="_blank" rel="noopener" class="article-link">Ler →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-tag-category">AWS · TERRAFORM</div>
+                        <h3 class="article-title">
+                            <a href="https://fidelissauro.dev/disaster-recovery-projetando-e-gerenciando-arquiteturas-multi-region-na-aws-com-terraform/" target="_blank" rel="noopener">
+                                Disaster Recovery — Arquiteturas Multi-Region na AWS com Terraform
+                            </a>
+                        </h3>
+                        <p class="article-excerpt">Como projetar e gerenciar arquiteturas multi-region de alta disponibilidade na AWS usando Terraform como IaC.</p>
+                        <div class="article-meta">
+                            <span class="article-author"><i class="fas fa-user-circle"></i> Matheus Fidelis</span>
+                            <a href="https://fidelissauro.dev/disaster-recovery-projetando-e-gerenciando-arquiteturas-multi-region-na-aws-com-terraform/" target="_blank" rel="noopener" class="article-link">Ler →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-tag-category">CAPACITY · FILAS</div>
+                        <h3 class="article-title">
+                            <a href="https://fidelissauro.dev/capacity-planning/" target="_blank" rel="noopener">
+                                System Design — Capacity Planning e Teoria das Filas
+                            </a>
+                        </h3>
+                        <p class="article-excerpt">Guia aprofundado de Capacity Planning: Teoria das Filas, Lei de Little, Knee Curve e modelagem de carga para entender limites de throughput.</p>
+                        <div class="article-meta">
+                            <span class="article-author"><i class="fas fa-user-circle"></i> Matheus Fidelis</span>
+                            <a href="https://fidelissauro.dev/capacity-planning/" target="_blank" rel="noopener" class="article-link">Ler →</a>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="articles-footer">
+                    <a href="https://fidelissauro.dev" target="_blank" rel="noopener" class="see-more-btn">
+                        Ver todos os artigos em fidelissauro.dev <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COMMUNITY ===== -->
         <section id="community" class="community-section">
             <div class="container">
-                <h2>COMUNIDADE & CURSOS</h2>
-                <p>Links e referências do mundo DevOps que recomendo e sigo.</p>
+                <div class="section-label">// ECOSISTEMA</div>
+                <h2>COMUNIDADE <span class="accent">&amp; CURSOS</span></h2>
+                <p class="section-subtitle">Links e referências do mundo DevOps que recomendo e sigo.</p>
                 <div class="card-grid">
-                    <a href="https://cursos.alura.com.br/user/fabriciomacedo" target="_blank" class="card">
-                        <h3>MEUS CURSOS DA ALURA</h3>
-                        <p>Veja o que estou estudando na Alura!.</p>
+                    <a href="https://cursos.alura.com.br/user/fabriciomacedo" target="_blank" rel="noopener" class="card">
+                        <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>ALURA</h3>
+                        <p>Veja o que estou estudando na maior plataforma de tecnologia do Brasil.</p>
                     </a>
-                    <a href="https://linuxtips.io" target="_blank" class="card">
+                    <a href="https://linuxtips.io" target="_blank" rel="noopener" class="card">
+                        <div class="card-icon"><i class="fab fa-linux"></i></div>
                         <h3>LINUXTIPS</h3>
-                        <p>A maior comunidade DevOps do Brasil.</p>
+                        <p>A maior comunidade DevOps do Brasil. Treinamentos de alto nível.</p>
                     </a>
-                    <a href="https://www.linuxfoundation.org/" target="_blank" class="card">
+                    <a href="https://www.linuxfoundation.org/" target="_blank" rel="noopener" class="card">
+                        <div class="card-icon"><i class="fas fa-layer-group"></i></div>
                         <h3>LINUX FOUNDATION</h3>
-                        <p>A casa do Linux e do Open Source.</p>
+                        <p>A casa do Linux e do Open Source. Certificações globais.</p>
                     </a>
-                    <a href="https://www.docker.com/" target="_blank" class="card">
+                    <a href="https://www.docker.com/" target="_blank" rel="noopener" class="card">
+                        <div class="card-icon"><i class="fab fa-docker"></i></div>
                         <h3>DOCKER</h3>
-                        <p>Empacotar, distribuir e executar contêineres.</p>
+                        <p>Empacotar, distribuir e executar contêineres em qualquer ambiente.</p>
                     </a>
-                     <a href="https://kubernetes.io/" target="_blank" class="card">
+                    <a href="https://kubernetes.io/" target="_blank" rel="noopener" class="card">
+                        <div class="card-icon"><i class="fas fa-cubes"></i></div>
                         <h3>KUBERNETES</h3>
-                        <p>Orquestração de container em escala.</p>
+                        <p>Orquestração de contêineres em escala. O padrão da indústria.</p>
                     </a>
-                     <a href="https://www.python.org/community/" target="_blank" class="card">
+                    <a href="https://www.python.org/community/" target="_blank" rel="noopener" class="card">
+                        <div class="card-icon"><i class="fab fa-python"></i></div>
                         <h3>PYTHON COMMUNITY</h3>
-                        <p> Sustentado por ótimas pessoas</p>
+                        <p>Sustentado por pessoas incríveis. A linguagem da automação.</p>
                     </a>
-                    <!-- Add more cards as needed -->
                 </div>
             </div>
         </section>
@@ -116,17 +263,39 @@
 
     <footer id="contact" class="main-footer">
         <div class="container">
-            <h2>CONTATO</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> fabriciobaraunadev@gmail.com</p>
-                <p><i class="fas fa-phone"></i> 92 98826-8454</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><span class="logo-bracket">[</span>FB<span class="logo-bracket">]</span></div>
+                    <p>Engenheiro de Software especializado em DevOps, Cloud e automação. Sempre disponível para novos desafios.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>CONTATO</h3>
+                    <a href="mailto:fabriciobaraunadev@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> fabriciobaraunadev@gmail.com
+                    </a>
+                    <a href="https://wa.me/5592988268454" target="_blank" rel="noopener" class="contact-link">
+                        <i class="fab fa-whatsapp"></i> (92) 98826-8454
+                    </a>
+                </div>
+                <div class="footer-social">
+                    <h3>REDES</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/fabricio-hunt" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fabricio-barauna93/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=E47B652FAE1FA938DA92BA5C05169AD5.buscatextual_0" target="_blank" rel="noopener" aria-label="Lattes">
+                            <i class="fas fa-flask"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="social-icons">
-                <a href="https://github.com/fabricio-hunt" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/fabricio-barauna93/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Fabrício Baraúna — Todos os direitos reservados.</p>
+                <p class="footer-built">Built with <span class="heart">♥</span> & raw code</p>
             </div>
-            <p class="copyright">&copy; 2025 Fabricio Barauna. All items secured.</p>
         </div>
     </footer>
 
